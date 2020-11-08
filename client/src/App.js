@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Switch>
-        <Route exact path="/" render={(rProps) => (token === null ? <Signin /> : <Home />)} />
+        <Route exact path="/" render={(props) => (token === null ? <Signin /> : <Home />)} />
         <Route exact path="/signup" component={Signup} />
         <Route exact path="/signin" component={Signin} />
       </Switch>

@@ -13,7 +13,8 @@ export const authMethods = {
       .catch((err) => setErrors((prev) => [...prev, err.message]));
   },
 
-  signin: (email, pw, setErrors, setToken) => {
+  signin: (email, pw, setErrors, setToken, setStatus) => {
+    setStatus("loading");
     firebase
       .auth()
       .signInWithEmailAndPassword(email, pw)
@@ -21,6 +22,7 @@ export const authMethods = {
         const token = await Object.entries(res.user)[5][1].b;
         await localStorage.setItem("token", token);
         setToken(window.localStorage.token);
+        setStatus("authenticated");
       })
       .catch((err) => setErrors((prev) => [...prev, err.message]));
   },

@@ -28,22 +28,25 @@
 }
 
 .card {
+  width: 350px;
   background-color: #202040;
   border-radius: 10px;
-  padding: 2em;
+  padding: 2em 2em 1.5em;
   .cardHeaderContainer {
     text-align: center;
     color: #ffbd69;
     font-size: 1.5em;
     h1 {
-      font-size: 2.2rem;
+      font-size: 2.3rem;
     }
   }
   .cardDescriptionContainer {
-    text-align: center;
     color: #fff;
-    margin-top: 10px;
+    margin: 10px auto;
     max-width: 300px; //maybe shouldn't use pixel widths but idk
+    p {
+      text-align: center;
+    }
   }
   .buttonsContainer {
     margin-top: 30px;

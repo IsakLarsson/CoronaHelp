@@ -6,7 +6,7 @@ const CreateButton = () => {
       style={{
         width: "120px",
         backgroundColor: "#ffbd69",
-        borderRadius: "12px",
+        borderRadius: "15px",
         display: "flex",
         flexDirection: "row",
         justifyContent: "flex-end",

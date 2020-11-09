@@ -6,7 +6,7 @@ const JoinButton = () => {
       style={{
         width: "120px",
         backgroundColor: "#ffbd69",
-        borderRadius: "10px",
+        borderRadius: "15px",
         display: "flex",
         flexDirection: "row",
         justifyContent: "flex-start",

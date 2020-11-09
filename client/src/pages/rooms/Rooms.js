@@ -38,6 +38,14 @@ const Rooms = () => {
           header="Chat room"
           text="Start a chat room with your homies or join a random one "
         />
+        <RoomCard
+          header="Watch together"
+          text="Have a show or a movie that you want to watch with the boyz? This is the place for you!"
+        />
+        <RoomCard
+          header="Game lobby"
+          text="Wanna play some gaimz with the homies? or find new homies that don’t suck?"
+        />
       </div>
     </section>
   );

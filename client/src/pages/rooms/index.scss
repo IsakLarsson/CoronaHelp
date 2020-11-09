@@ -1,0 +1,54 @@
+.roomsPage {
+  background: linear-gradient(180deg, #543864 0%, #202040 102.93%);
+  min-height: 100vh;
+  padding: 0 10%;
+}
+
+//obviously add media queries and such and such
+.headerContainer {
+  padding-top: 4em;
+  color: #fff;
+  text-align: center;
+  h1 {
+    font-size: 3rem;
+  }
+  .description {
+    margin: 0 auto;
+    max-width: 500px;
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+}
+
+.cardsContainer {
+  margin-top: 4em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  background-color: #202040;
+  border-radius: 10px;
+  padding: 2em;
+  .cardHeaderContainer {
+    text-align: center;
+    color: #ffbd69;
+    font-size: 1.5em;
+    h1 {
+      font-size: 2.2rem;
+    }
+  }
+  .cardDescriptionContainer {
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+    max-width: 300px; //maybe shouldn't use pixel widths but idk
+  }
+  .buttonsContainer {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

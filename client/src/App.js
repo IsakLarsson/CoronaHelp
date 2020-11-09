@@ -12,6 +12,7 @@ import { useAuth } from "./hooks/useAuth";
 
 import Home from "./pages/home/Home";
 import Landingpage from "./pages/landing/Landingpage";
+import Rooms from "./pages/rooms/Rooms";
 import { userContext } from "./hooks/useAuth";
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
   return (
     <>
       <Switch>
+        <Route exact path="/rooms" component={Rooms} />
         <Route
           exact
           path="/"
